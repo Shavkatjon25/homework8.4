@@ -2,32 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root{
+  --logo-color:#222731;
+  --daek-color:#4B6A9B;
+  --th-son-color:#2b3442;
+  --lorem-yonalish-folo-clor:#4B6A9B;
+  --join-color:#697C9A;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.mod{
+  --logo-color:#fff;
+  --daek-color:#fff;
+  --th-son-color:#fff;
+  --lorem-yonalish-folo-clor:#fff;
+  --join-color:#fff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+.logo{
+  color: var(--logo-color);
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dark{
+  color: var(--daek-color);
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+.th{
+  color: var(--th-son-color);
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.no{
+  color: #F74646;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.a{
+  color: #0079FF;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.join{
+  color: var(--join-color);
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lorem{
+  color: var(--lorem-yonalish-folo-clor);
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 192.308% */
+}
+
+.folo{
+  color: var(--lorem-yonalish-folo-clor);
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.son{
+  color: var(--th-son-color);
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.yonal{
+  color: var(--lorem-yonalish-folo-clor);
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
